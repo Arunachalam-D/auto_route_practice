@@ -1,6 +1,8 @@
+import 'package:auto_route/annotations.dart';
 import 'package:auto_route_practice/pages/about_page.dart';
 import 'package:flutter/material.dart';
 
+@RoutePage()
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
 

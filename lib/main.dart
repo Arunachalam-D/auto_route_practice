@@ -1,4 +1,4 @@
-import 'package:auto_route_practice/pages/home_page.dart';
+import 'package:auto_route_practice/auto_route/app_routes.dart';
 import 'package:flutter/material.dart';
 
 void main(){
@@ -10,9 +10,10 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    AppRouter approuter =  AppRouter();
+    return  MaterialApp.router(
       debugShowCheckedModeBanner: false,
-      home: HomePage(),
+      routerConfig: approuter.config(),
     );
   }
 }
